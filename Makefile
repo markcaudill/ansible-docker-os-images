@@ -18,7 +18,7 @@ IMAGES := $(shell dirname */*/Dockerfile)
 # Commands
 CAT = cat
 DOCKER = docker
-LINT = $(DOCKER) run --rm -i hadolint/hadolint hadolint - --ignore DL3008
+LINT = $(DOCKER) run --rm -i hadolint/hadolint hadolint - --ignore DL3008 --ignore DL3033 --ignore DL3041
 HASH = sha256sum
 
 REPO = markcaudill
